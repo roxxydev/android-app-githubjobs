@@ -8,8 +8,11 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.githubjobs.android.MainActivity;
 import com.githubjobs.android.R;
 import com.githubjobs.android.entity.Job;
+import com.githubjobs.android.fragment.JobDetailsFgmt;
+import com.githubjobs.android.fragment.JobListFgmt;
 import com.githubjobs.android.network.RequestCreator;
 
 import java.util.ArrayList;
@@ -53,12 +56,28 @@ public class JobsListAdapter extends BaseAdapter {
             vHolder = (ViewHolder) view.getTag();
         }
 
-        Job jobObj = arr.get(i);
+        final Job jobObj = arr.get(i);
 
         vHolder.tvJobTitle.setText(jobObj.getTitle());
         vHolder.tvCompanyName.setText(jobObj.getCompany());
 
         RequestCreator.loadImage(activity, jobObj.getCompanyLogo(), vHolder.iv);
+
+        // Show screen of full job details
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                JobDetailsFgmt fgmt = new JobDetailsFgmt();
+                fgmt.setJob(jobObj);
+
+                MainActivity mainActivity = (MainActivity) activity;
+                mainActivity.getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.activity_main_container, fgmt)
+                        .addToBackStack(JobListFgmt.class.getName())
+                        .commit();
+            }
+        });
 
         return view;
     }

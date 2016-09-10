@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fgmt_jobdetails_iv"
+        android:layout_width="@dimen/jobdetails_iv_hw"
+        android:layout_height="@dimen/jobdetails_iv_hw"
+        android:layout_marginTop="@dimen/jobdetails_iv_margin_topbot"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/fgmt_jobdetails_tv_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/jobdetails_fields_margin_topbot"
+        android:layout_marginBottom="@dimen/jobdetails_fields_margin_topbot"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/jobdetails_fields_margin_topbot"
+        android:layout_marginBottom="@dimen/jobdetails_fields_margin_topbot"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/fgmt_jobdetails_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginBottom="@dimen/jobdetails_fields_margin_topbot"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/fgmt_jobdetails_tv_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginBottom="@dimen/jobdetails_fields_margin_topbot"/>
+
+    <TextView
+        android:id="@+id/fgmt_jobdetails_tv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginBottom="@dimen/jobdetails_fields_margin_topbot"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/jobdetails_fields_margin_topbot"
+        android:layout_marginBottom="@dimen/jobdetails_fields_margin_topbot"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/jobdetails_fields_margin_topbot"
+        android:text="@string/fgmt_jobdetails_label_description"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/fgmt_jobdetails_tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/jobdetails_fields_margin_topbot"
+                android:layout_marginBottom="@dimen/jobdetails_fields_margin_topbot"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/jobdetails_fields_margin_topbot"
+        android:layout_marginBottom="@dimen/jobdetails_fields_margin_topbot"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/jobdetails_fields_margin_topbot"
+        android:layout_marginBottom="@dimen/jobdetails_fields_margin_topbot"
+        android:text="@string/fgmt_jobdetails_label_howtoapply"/>
+
+    <TextView
+        android:id="@+id/fgmt_jobdetails_tv_how_to_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:linksClickable="true"
+        android:autoLink="all"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/jobdetails_fields_margin_topbot"
+        android:layout_marginBottom="@dimen/jobdetails_fields_margin_topbot"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/jobdetails_fields_margin_topbot"
+        android:text="@string/fgmt_jobdetails_label_link"/>
+
+    <TextView
+        android:id="@+id/fgmt_jobdetails_tv_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/jobdetails_fields_margin_topbot"
+        android:layout_marginBottom="@dimen/jobdetails_fields_margin_topbot"
+        android:linksClickable="true"
+        android:autoLink="all"/>
+
+</LinearLayout>

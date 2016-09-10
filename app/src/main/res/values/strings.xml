@@ -10,7 +10,12 @@
 
     <string name="fgmt_jobsearch_btn_text_search">SEARCH</string>
 
+    <string name="fgmt_jobdetails_label_description">Description:</string>
+    <string name="fgmt_jobdetails_label_howtoapply">How to Apply:</string>
+    <string name="fgmt_jobdetails_label_link">Link:</string>
+
     <string name="fgmt_joblist_ab_title">Search Results</string>
+    <string name="fgmt_jobdetails_ab_title">Details</string>
 
     <string name="progress_msg_jobsearch">Loading</string>
 

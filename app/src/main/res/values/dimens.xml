@@ -8,4 +8,8 @@
     <dimen name="joblist_item_iv_hw">50dp</dimen>
     <dimen name="joblist_item_fields_margin_topbtm">4dp</dimen>
     <dimen name="joblist_item_fields_margin_leftright">8dp</dimen>
+
+    <dimen name="jobdetails_iv_hw">80dp</dimen>
+    <dimen name="jobdetails_iv_margin_topbot">4dp</dimen>
+    <dimen name="jobdetails_fields_margin_topbot">4dp</dimen>
 </resources>

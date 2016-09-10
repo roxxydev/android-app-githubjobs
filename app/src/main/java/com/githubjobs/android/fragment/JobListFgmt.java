@@ -47,13 +47,18 @@ public class JobListFgmt extends Fragment {
 
         tvMsg = (TextView) v.findViewById(R.id.fgmt_joblist_tv_message);
 
+        showListviewData(arrJobs);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
         AppCompatActivity appCompatActivity = (AppCompatActivity) getActivity();
         ActionBar ab = appCompatActivity.getSupportActionBar();
         ab.setDisplayShowHomeEnabled(true);
         ab.setDisplayHomeAsUpEnabled(true);
         ab.setTitle(getActivity().getResources().getString(R.string.fgmt_joblist_ab_title));
-
-        showListviewData(arrJobs);
     }
 
     // Initialize ListView adapter
@@ -68,8 +73,7 @@ public class JobListFgmt extends Fragment {
         }
     }
 
-    // Show text message for no connection or no result found.
-    // If text message is to show then it will hide the listview.
+    // Show text message if no result found and hide the ListView.
     private void showTextMessage(boolean isShow, String msg) {
         int tvMsgVisibility = isShow ? View.VISIBLE : View.GONE;
         int lvVisibility = isShow ? View.GONE : View.VISIBLE;
