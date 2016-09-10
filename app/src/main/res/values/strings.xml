@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="fgmt_jobsearch_label_title">Title</string>
+    <string name="fgmt_jobsearch_label_company">Company</string>
+    <string name="fgmt_jobsearch_label_location">Location</string>
+    <string name="fgmt_jobsearch_label_type">Type</string>
+
+    <string name="fgmt_jobsearch_label_type_fulltime">Full-time</string>
+    <string name="fgmt_jobsearch_label_type_parttime">Part-time</string>
+
+    <string name="fgmt_jobsearch_btn_text_search">SEARCH</string>
+
+    <string name="fgmt_joblist_ab_title">Search Results</string>
+
+    <string name="progress_msg_jobsearch">Loading</string>
+
+    <string name="msg_no_result_found">
+        No result found.
+    </string>
+
+    <string name="msg_unable_to_connect">
+        Unable to connect at this time. Please check your internet connection.
+    </string>
+
+</resources>

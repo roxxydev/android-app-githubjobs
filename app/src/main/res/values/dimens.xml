@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="jobsearch_field_margin_topbtm">4dp</dimen>
+
+    <dimen name="joblist_item_iv_hw">50dp</dimen>
+    <dimen name="joblist_item_fields_margin_topbtm">4dp</dimen>
+    <dimen name="joblist_item_fields_margin_leftright">8dp</dimen>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/fgmt_jobsearch_et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jobsearch_field_margin_topbtm"
+        android:layout_marginBottom="@dimen/jobsearch_field_margin_topbtm"
+        android:singleLine="true"
+        android:hint="@string/fgmt_jobsearch_label_title"
+        android:inputType="textCapWords"/>
+
+    <EditText
+        android:id="@+id/fgmt_jobsearch_et_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jobsearch_field_margin_topbtm"
+        android:layout_marginBottom="@dimen/jobsearch_field_margin_topbtm"
+        android:singleLine="true"
+        android:hint="@string/fgmt_jobsearch_label_company"
+        android:inputType="textCapWords"/>
+
+    <EditText
+        android:id="@+id/fgmt_jobsearch_et_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jobsearch_field_margin_topbtm"
+        android:layout_marginBottom="@dimen/jobsearch_field_margin_topbtm"
+        android:singleLine="true"
+        android:hint="@string/fgmt_jobsearch_label_location"
+        android:inputType="textCapWords"
+        android:imeOptions="actionDone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/jobsearch_field_margin_topbtm"
+        android:layout_marginBottom="@dimen/jobsearch_field_margin_topbtm"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jobsearch_field_margin_topbtm"
+        android:layout_marginBottom="@dimen/jobsearch_field_margin_topbtm"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/fgmt_jobsearch_label_type" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/fgmt_jobsearch_cb_fulltime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jobsearch_field_margin_topbtm"
+        android:layout_marginBottom="@dimen/jobsearch_field_margin_topbtm"
+        android:text="@string/fgmt_jobsearch_label_type_fulltime" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/fgmt_jobsearch_cb_parttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jobsearch_field_margin_topbtm"
+        android:layout_marginBottom="@dimen/jobsearch_field_margin_topbtm"
+        android:text="@string/fgmt_jobsearch_label_type_parttime" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- Empty view to occupy space so button search will always be at bottom -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+    <Button
+        android:id="@+id/fgmt_joblist_btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jobsearch_field_margin_topbtm"
+        android:layout_marginBottom="@dimen/jobsearch_field_margin_topbtm"
+        android:text="@string/fgmt_jobsearch_btn_text_search"/>
+
+</LinearLayout>
