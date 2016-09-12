@@ -4,12 +4,15 @@ import android.content.Context;
 import android.widget.ImageView;
 
 import com.android.volley.toolbox.ImageLoader;
-import com.githubjobs.android.BuildConfig;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+
+import com.githubjobs.android.BuildConfig;
 import com.githubjobs.android.R;
+
+import android.webkit.URLUtil;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -92,7 +95,7 @@ public class RequestCreator {
      * @param imageView The ImageView where to display the imgUrl.
      */
     public static void loadImage(Context ctx, String imgUrl, final ImageView imageView) {
-        if (imgUrl != null && !imgUrl.isEmpty()) {
+        if (imgUrl != null && !imgUrl.isEmpty() && URLUtil.isValidUrl(imgUrl)) {
             HttpManager.getInstance(ctx).getImageLoader().get(
                     imgUrl,
                     new ImageLoader.ImageListener() {
